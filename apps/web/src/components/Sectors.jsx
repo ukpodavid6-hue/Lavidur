@@ -4,13 +4,15 @@ import { FadeIn, StaggerContainer } from "./Animation";
 const sectors = [
   {
     title: "Oil & Gas",
-    image: "https://source.unsplash.com/gZbjx2K7s9I/2000x1400",
+    image:
+      "https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2000&auto=format&fit=crop",
     description:
       "Upstream and midstream infrastructure development and optimization.",
   },
   {
     title: "Renewable Energy",
-    image: "https://source.unsplash.com/GEisAZ8wVLs/2000x1400",
+    image:
+      "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop",
     description:
       "Solar and sustainable energy solutions for industrial applications.",
   },
