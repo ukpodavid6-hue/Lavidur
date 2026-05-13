@@ -44,7 +44,9 @@ export default function Founder() {
                     Founder & Executive Director
                   </div>
                   <a
-                    href="#"
+                    href="https://ng.linkedin.com/in/augustineowoukpong"
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label="LinkedIn profile"
                     className="mt-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[#b4975a]"
                   >
