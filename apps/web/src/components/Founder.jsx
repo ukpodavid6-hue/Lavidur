@@ -1,35 +1,27 @@
-import { motion } from "motion/react";
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import { FadeIn } from "./Animation";
 import founderImage from "../../../mobile/assets/images/image.png";
 
-const highlights = [
-  "29+ years in project, engineering, and operational leadership",
-  "600+ km of pipeline infrastructure experience",
-  "3,500+ MW power generation asset exposure",
-  "COREN-registered chartered engineer",
-];
-
 export default function Founder() {
   return (
-    <section id="founder" className="bg-white py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 xl:gap-20 items-stretch">
-          <FadeIn direction="right" className="flex flex-col justify-center">
-            <span className="text-[#b4975a] text-sm font-bold tracking-[0.3em] uppercase mb-4 block">
-              Founder & Leadership
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#022c22] leading-tight mb-8">
-              Founded by Engr. Augustine Owo' Ukpong in 2018 after 29 years in
-              complex energy project leadership.
+    <section id="founder" className="bg-slate-50 py-24 overflow-hidden">
+      <div className="max-w-[1500px] mx-auto px-6 md:px-12">
+        <div className="grid lg:grid-cols-[1.05fr_0.72fr_0.85fr] gap-10 xl:gap-14 items-stretch">
+          <FadeIn direction="right" className="flex min-h-[560px] flex-col">
+            <h2 className="text-3xl md:text-4xl xl:text-[2.7rem] font-extrabold text-[#022c22] leading-tight mb-8">
+              Founded by{" "}
+              <span className="text-[#b4975a]">
+                Engr. Augustine Owo' Ukpong.
+              </span>{" "}
+              In 2018 after 29 years in complex energy project leadership
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed font-light mb-8">
+            <p className="text-gray-600 leading-relaxed font-light mb-6 max-w-xl">
               Engr. Augustine Owo' Ukpong is a distinguished energy executive
               and chartered engineer whose career spans complex EPC and EPCIC
               projects across oil and gas, power, pipelines, and infrastructure
               sectors in the Middle East and Africa.
             </p>
-            <p className="text-gray-600 leading-relaxed font-light mb-10">
+            <p className="text-gray-600 leading-relaxed font-light max-w-xl">
               LAVIDUR Ventures Limited is being reinforced and formalised as an
               infrastructure development and management company serving the
               global energy, oil, and gas corridor, with emphasis on project
@@ -37,27 +29,40 @@ export default function Founder() {
               transition opportunities.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-4 mb-10">
-              {highlights.map((item) => (
-                <div
-                  key={item}
-                  className="border-l-2 border-[#b4975a] bg-slate-50 px-5 py-4 text-sm font-semibold text-[#022c22]"
-                >
-                  {item}
+            <div className="mt-auto grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end pt-14">
+              <div className="flex items-center gap-5">
+                <img
+                  src={founderImage}
+                  alt="Engr. Augustine Owo' Ukpong"
+                  className="h-20 w-20 rounded-full object-cover ring-4 ring-white shadow-lg"
+                />
+                <div>
+                  <div className="text-[#022c22] font-extrabold leading-tight">
+                    Engr. Augustine Owo' Ukpong
+                  </div>
+                  <div className="mt-1 text-sm text-gray-500">
+                    Founder & Executive Director
+                  </div>
+                  <a
+                    href="#"
+                    aria-label="LinkedIn profile"
+                    className="mt-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[#b4975a]"
+                  >
+                    <Linkedin size={14} />
+                    LinkedIn
+                  </a>
                 </div>
-              ))}
-            </div>
+              </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <details className="group sm:min-w-[180px]">
-                <summary className="inline-flex cursor-pointer list-none items-center justify-center gap-2 bg-[#022c22] px-7 py-4 text-sm font-bold uppercase tracking-widest text-white rounded-sm hover:bg-[#064e3b] transition-colors [&::-webkit-details-marker]:hidden">
+              <details className="group">
+                <summary className="inline-flex cursor-pointer list-none items-center justify-center gap-2 bg-[#022c22] px-8 py-4 text-xs font-bold uppercase tracking-widest text-white rounded-sm hover:bg-[#064e3b] transition-colors [&::-webkit-details-marker]:hidden">
                   Learn More
                   <ArrowRight
                     size={16}
                     className="transition-transform group-open:rotate-90"
                   />
                 </summary>
-                <div className="mt-5 max-w-2xl bg-slate-50 border border-gray-100 p-5 text-sm text-gray-600 leading-relaxed font-light">
+                <div className="mt-5 sm:absolute sm:left-12 sm:right-12 lg:left-auto lg:right-auto lg:max-w-xl bg-white border border-gray-100 p-5 text-sm text-gray-600 leading-relaxed font-light shadow-xl z-20">
                   He has delivered and led complex project portfolios for
                   global operators and service companies including NNPC, Shell,
                   NLNG, ExxonMobil, TotalEnergies, GE, Solar Turbines, Nestoil,
@@ -71,102 +76,67 @@ export default function Founder() {
                   Scholarship Programme.
                 </div>
               </details>
-              <a
-                href="#"
-                aria-label="LinkedIn profile"
-                className="inline-flex items-center justify-center gap-2 border border-[#b4975a] px-7 py-4 text-sm font-bold uppercase tracking-widest text-[#b4975a] rounded-sm hover:bg-[#b4975a] hover:text-white transition-colors"
-              >
-                <Linkedin size={16} />
-                LinkedIn
-              </a>
             </div>
           </FadeIn>
 
-          <FadeIn direction="left" className="flex flex-col gap-6">
-            <motion.div
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3 }}
-              className="relative min-h-[300px] bg-[#022c22] rounded-sm overflow-hidden shadow-2xl"
-            >
+          <FadeIn
+            direction="up"
+            className="relative min-h-[520px] overflow-hidden bg-[#022c22] shadow-2xl"
+          >
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/65 via-transparent to-transparent" />
               <div className="absolute left-6 right-6 bottom-6">
-                <div className="text-white text-2xl font-bold leading-tight max-w-sm">
-                  Infrastructure development with operator-level execution
-                  discipline.
+                <div className="text-white text-xl font-bold leading-tight">
+                  Project development, engineering governance, and execution
+                  strategy.
                 </div>
                 <div className="mt-2 text-[#b4975a] text-xs font-bold uppercase tracking-[0.2em]">
-                  Project placeholder image
+                  Energy & Infrastructure
                 </div>
               </div>
-            </motion.div>
+          </FadeIn>
 
-            <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-6">
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.3 }}
-                className="bg-[#022c22] border border-[#022c22] rounded-sm overflow-hidden"
-              >
-                <div className="aspect-[4/5] overflow-hidden">
-                  <img
-                    src={founderImage}
-                    alt="Engr. Augustine Owo' Ukpong"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="text-white text-lg font-bold leading-tight">
-                    Engr. Augustine Owo' Ukpong
-                  </div>
-                  <div className="mt-2 text-[#b4975a] text-[10px] font-bold uppercase tracking-[0.18em]">
-                    Founder & Executive Director
-                  </div>
-                </div>
-              </motion.div>
-
+          <FadeIn direction="left" className="flex min-h-[560px] items-center">
             <form
               action="mailto:info@lavidur.com"
               method="post"
               encType="text/plain"
-              className="bg-slate-50 border border-gray-100 p-6 flex flex-col justify-center"
+              className="w-full"
             >
-              <div className="text-[#022c22] text-xl font-bold mb-2">
-                Request Advisory
+              <div className="grid sm:grid-cols-2 gap-5 mb-5">
+                <input
+                  name="name"
+                  placeholder="Name*"
+                  className="w-full border border-gray-200 bg-white px-5 py-4 text-sm italic outline-none focus:border-[#b4975a]"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email*"
+                  className="w-full border border-gray-200 bg-white px-5 py-4 text-sm italic outline-none focus:border-[#b4975a]"
+                />
               </div>
-              <p className="text-gray-500 text-sm font-light leading-relaxed mb-6">
-                Share a project note with LAVIDUR's leadership team.
-              </p>
-              <input
-                name="name"
-                placeholder="Name"
-                className="mb-4 w-full border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-[#b4975a]"
-              />
-              <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                className="mb-4 w-full border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-[#b4975a]"
-              />
               <input
                 name="subject"
                 placeholder="Inquiry about"
-                className="mb-4 w-full border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-[#b4975a]"
+                className="mb-5 w-full border border-gray-200 bg-white px-5 py-4 text-sm italic outline-none focus:border-[#b4975a]"
               />
               <textarea
                 name="message"
                 placeholder="Let us know what you need"
-                rows={5}
-                className="mb-5 w-full resize-none border border-gray-200 bg-white px-4 py-3 text-sm outline-none focus:border-[#b4975a]"
+                rows={7}
+                className="mb-6 w-full resize-none border border-gray-200 bg-white px-5 py-4 text-sm italic outline-none focus:border-[#b4975a]"
               />
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center gap-2 bg-[#b4975a] px-6 py-4 text-xs font-bold uppercase tracking-widest text-white rounded-sm hover:bg-[#c5a059] transition-colors"
-              >
-                Send Inquiry
-                <Mail size={15} />
-              </button>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center gap-2 bg-[#b4975a] px-9 py-4 text-xs font-bold uppercase tracking-widest text-white rounded-sm hover:bg-[#c5a059] transition-colors"
+                >
+                  Get a Quote
+                  <Mail size={15} />
+                </button>
+              </div>
             </form>
-            </div>
           </FadeIn>
         </div>
       </div>
