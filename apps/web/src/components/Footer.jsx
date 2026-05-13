@@ -4,7 +4,6 @@ import {
   Phone,
   MapPin,
   Linkedin,
-  Twitter,
   ArrowUpRight,
 } from "lucide-react";
 import lavidurLogo from "../../../mobile/assets/images/Lavidur_Logo-removebg-preview.png";
@@ -42,7 +41,7 @@ export default function Footer() {
               development.
             </p>
             <div className="flex gap-4">
-              {[Linkedin, Twitter].map((Icon, i) => (
+              {[Linkedin].map((Icon, i) => (
                 <motion.a
                   key={i}
                   whileHover={{ y: -5, color: "#b4975a" }}
