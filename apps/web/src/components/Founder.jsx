@@ -11,12 +11,12 @@ export default function Founder() {
             <h2 className="text-3xl md:text-4xl xl:text-[2.7rem] font-extrabold text-[#022c22] leading-tight mb-8">
               Founded by{" "}
               <span className="text-[#b4975a]">
-                Engr. Augustine Owo' Ukpong.
+                Engr. Augustine O. Ukpong.
               </span>{" "}
               In 2018 after 29 years in complex energy project leadership
             </h2>
             <p className="text-gray-600 leading-relaxed font-light mb-6 max-w-xl">
-              Engr. Augustine Owo' Ukpong is a distinguished energy executive
+              Engr. Augustine O. Ukpong is a distinguished energy executive
               and chartered engineer whose career spans complex EPC and EPCIC
               projects across oil and gas, power, pipelines, and infrastructure
               sectors in the Middle East and Africa.
@@ -33,12 +33,12 @@ export default function Founder() {
               <div className="flex items-center gap-5">
                 <img
                   src={founderImage}
-                  alt="Engr. Augustine Owo' Ukpong"
+                  alt="Engr. Augustine O. Ukpong"
                   className="h-20 w-20 rounded-full object-cover ring-4 ring-white shadow-lg"
                 />
                 <div>
                   <div className="text-[#022c22] font-extrabold leading-tight">
-                    Engr. Augustine Owo' Ukpong
+                    Engr. Augustine O. Ukpong
                   </div>
                   <div className="mt-1 text-sm text-gray-500">
                     Founder & Executive Director
