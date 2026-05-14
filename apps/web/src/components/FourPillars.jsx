@@ -31,7 +31,7 @@ const pillars = [
 
 export default function FourPillars() {
   return (
-    <section className="relative z-20 -mt-24 bg-[#f6f3ec] pb-14">
+    <section className="relative z-20 -mt-20 md:-mt-32 bg-[#f6f3ec] pt-0 pb-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-y divide-white/10 md:divide-y-0 border border-[#b4975a]/20 shadow-2xl">
           {pillars.map((pillar, index) => (
