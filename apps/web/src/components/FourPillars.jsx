@@ -33,19 +33,19 @@ export default function FourPillars() {
   return (
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-y md:divide-y-0 border border-gray-100 shadow-2xl">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-y divide-white/10 md:divide-y-0 border border-[#b4975a]/20 shadow-2xl">
           {pillars.map((pillar, index) => (
             <motion.div
               key={pillar.title}
               whileHover="hover"
-              className="relative p-10 bg-white overflow-hidden group cursor-default"
+              className="relative p-10 bg-[#022c22] overflow-hidden group cursor-default"
             >
               {/* Hover Background */}
               <motion.div
                 variants={{
-                  hover: { opacity: 0.03 },
+                  hover: { opacity: 0.12 },
                 }}
-                className="absolute inset-0 bg-[#022c22] opacity-0 transition-opacity duration-300"
+                className="absolute inset-0 bg-[#b4975a] opacity-0 transition-opacity duration-300"
               />
 
               {/* Top Accent Line */}
@@ -65,10 +65,10 @@ export default function FourPillars() {
                 {pillar.icon}
               </motion.div>
 
-              <h3 className="text-xl font-bold text-[#022c22] mb-4 uppercase tracking-wider">
+              <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">
                 {pillar.title}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed font-light">
+              <p className="text-sm text-white/70 leading-relaxed font-light">
                 {pillar.description}
               </p>
 
