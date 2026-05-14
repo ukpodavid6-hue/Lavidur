@@ -67,9 +67,10 @@ export default function Hero() {
 
         <FadeIn delay={1.2} direction="up">
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            LAVIDUR Ventures Limited provides expert EPC, technical advisory,
-            and project development services tailored for Africa's evolving
-            energy landscape.
+            LAVIDUR Ventures Limited supports energy, infrastructure, and
+            industrial clients with project development, EPC coordination,
+            technical advisory, and commercial execution support across Nigeria
+            and frontier markets.
           </p>
         </FadeIn>
 
