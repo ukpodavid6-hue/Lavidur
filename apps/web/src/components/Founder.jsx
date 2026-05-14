@@ -1,6 +1,7 @@
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import { FadeIn } from "./Animation";
 import founderImage from "../../../mobile/assets/images/image.png";
+import founderFieldImage from "../../../mobile/assets/images/founder-field.jpeg";
 
 export default function Founder() {
   return (
@@ -84,23 +85,19 @@ export default function Founder() {
             direction="up"
             className="relative min-h-[520px] overflow-hidden bg-[#022c22] shadow-2xl"
           >
-              <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(180,151,90,0.16)_0%,rgba(2,44,34,0.96)_46%,rgba(1,26,20,1)_100%)]" />
-              <div className="absolute inset-0 opacity-10" style={{
-                backgroundImage:
-                  "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-                backgroundSize: "34px 34px",
-              }} />
-              <div className="absolute inset-8 border border-[#b4975a]/35" />
+              <img
+                src={founderFieldImage}
+                alt="Engr. Augustine O. Ukpong on a project site"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/85 via-[#022c22]/15 to-transparent" />
               <div className="absolute left-8 right-8 bottom-8">
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center border border-[#b4975a] text-[#b4975a]">
-                  LV
-                </div>
                 <div className="text-white text-xl font-bold leading-tight">
                   Project development, engineering governance, and execution
                   strategy.
                 </div>
                 <div className="mt-2 text-[#b4975a] text-xs font-bold uppercase tracking-[0.2em]">
-                  Image placeholder
+                  Energy & Infrastructure
                 </div>
               </div>
           </FadeIn>
