@@ -1,43 +1,47 @@
 import { motion } from "motion/react";
 import { StaggerContainer, FadeIn } from "./Animation";
-import { Hammer, Briefcase, BarChart3, Settings } from "lucide-react";
+import { Hammer, Briefcase, BarChart3, Target } from "lucide-react";
 
 const pillars = [
   {
     title: "Develop",
     description:
-      "Strategically conceptualizing and structuring energy and infrastructure projects from the ground up.",
-    icon: <Settings className="text-[#b4975a]" size={32} />,
+      "Origination, feasibility, partnerships, and execution pathways for energy and infrastructure ventures.",
+    icon: <Target className="text-[#c7a968]" size={26} strokeWidth={1.5} />,
   },
   {
     title: "Engineer",
     description:
-      "Providing world-class EPC services with precision, safety, and technical excellence.",
-    icon: <Hammer className="text-[#b4975a]" size={32} />,
+      "Technical definition, EPC coordination, constructability thinking, and disciplined delivery planning.",
+    icon: <Hammer className="text-[#c7a968]" size={26} strokeWidth={1.5} />,
   },
   {
     title: "Manage",
     description:
-      "Ensuring seamless execution and operational efficiency through rigorous project management.",
-    icon: <Briefcase className="text-[#b4975a]" size={32} />,
+      "Project controls, vendor coordination, risk tracking, interface management, and stakeholder reporting.",
+    icon: <Briefcase className="text-[#c7a968]" size={26} strokeWidth={1.5} />,
   },
   {
     title: "Advise",
     description:
-      "Strategic technical and regulatory advisory for navigating complex energy markets.",
-    icon: <BarChart3 className="text-[#b4975a]" size={32} />,
+      "Commercial, regulatory, procurement, and investment guidance for complex operating environments.",
+    icon: <BarChart3 className="text-[#c7a968]" size={26} strokeWidth={1.5} />,
   },
 ];
 
 export default function FourPillars() {
   return (
-    <section className="bg-white py-12">
+    <section className="relative z-20 -mt-24 bg-[#f6f3ec] pb-14">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-y divide-white/10 md:divide-y-0 border border-[#b4975a]/20 shadow-2xl">
           {pillars.map((pillar, index) => (
             <motion.div
               key={pillar.title}
               whileHover="hover"
+              variants={{
+                hidden: { opacity: 0, y: 28 },
+                show: { opacity: 1, y: 0 },
+              }}
               className="relative p-10 bg-[#022c22] overflow-hidden group cursor-default"
             >
               {/* Hover Background */}
@@ -53,7 +57,7 @@ export default function FourPillars() {
                 variants={{
                   hover: { width: "100%" },
                 }}
-                className="absolute top-0 left-0 w-0 h-[3px] bg-[#b4975a] transition-all duration-500"
+                className="absolute top-0 left-0 w-0 h-[2px] bg-[#b4975a] transition-all duration-500"
               />
 
               <motion.div
@@ -65,7 +69,7 @@ export default function FourPillars() {
                 {pillar.icon}
               </motion.div>
 
-              <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">
+              <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
                 {pillar.title}
               </h3>
               <p className="text-sm text-white/70 leading-relaxed font-light">

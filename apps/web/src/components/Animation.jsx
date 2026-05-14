@@ -135,10 +135,10 @@ export const HoverArrowButton = ({
     <Component
       href={href}
       whileHover="hover"
-      className={`group flex items-center gap-2 px-8 py-4 rounded-sm font-medium transition-colors duration-300 ${
+      className={`group inline-flex items-center justify-center gap-2 border px-8 py-4 rounded-[2px] text-sm font-semibold tracking-[0.08em] transition-all duration-300 ${
         primary
-          ? "bg-[#022c22] text-white hover:bg-[#064e3b]"
-          : "border border-[#b4975a] text-[#b4975a] hover:bg-[#b4975a] hover:text-white"
+          ? "border-[#b4975a]/60 bg-[#022c22] text-white hover:border-[#b4975a] hover:bg-[#064e3b]"
+          : "border-[#b4975a]/70 text-[#d0b36f] hover:bg-[#b4975a] hover:text-white"
       } ${className}`}
       {...props}
     >

@@ -33,14 +33,14 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 text-left">
-        <FadeIn direction="down" delay={0.2}>
-          <span className="inline-block px-4 py-1.5 rounded-full border border-[#b4975a]/30 bg-[#b4975a]/10 text-[#b4975a] text-xs font-bold tracking-[0.3em] uppercase mb-8">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 text-center md:text-left">
+        <FadeIn direction="up" delay={0.1}>
+          <span className="inline-block px-4 py-1.5 border border-[#b4975a]/30 bg-[#b4975a]/10 text-[#b4975a] text-xs font-bold tracking-[0.22em] uppercase mb-8">
             Pioneering Energy & Infrastructure
           </span>
         </FadeIn>
 
-        <motion.h1 className="max-w-5xl text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[1.1]">
+        <motion.h1 className="max-w-5xl mx-auto md:mx-0 text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[1.1]">
           {[
             "Building",
             "resilient",
@@ -66,7 +66,7 @@ export default function Hero() {
         </motion.h1>
 
         <FadeIn delay={1.2} direction="up">
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-12 leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto md:mx-0 mb-12 leading-relaxed font-light">
             LAVIDUR Ventures Limited supports energy, infrastructure, and
             industrial clients with project development, EPC coordination,
             technical advisory, and commercial execution support across Nigeria
@@ -77,7 +77,7 @@ export default function Hero() {
         <FadeIn
           delay={1.5}
           direction="up"
-          className="flex flex-col sm:flex-row items-start gap-6"
+          className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-6"
         >
           <HoverArrowButton href="#capabilities">
             EXPLORE CAPABILITIES

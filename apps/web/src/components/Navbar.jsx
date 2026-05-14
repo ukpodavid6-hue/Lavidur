@@ -115,9 +115,9 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="px-6 py-2.5 bg-[#b4975a] text-white text-sm font-bold rounded-sm hover:bg-[#c5a059] transition-all shadow-lg"
+            className="px-6 py-2.5 border border-[#b4975a]/70 bg-[#b4975a] text-white text-xs font-bold tracking-widest rounded-[2px] hover:bg-[#c5a059] transition-all shadow-lg"
           >
-            GET IN TOUCH
+            START A DISCUSSION →
           </motion.a>
         </div>
 
@@ -170,7 +170,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 px-8 py-4 bg-[#b4975a] text-white font-bold text-center rounded-sm"
             >
-              GET IN TOUCH
+              START A DISCUSSION →
             </a>
           </motion.div>
         )}
