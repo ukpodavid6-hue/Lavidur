@@ -1,22 +1,17 @@
 import { motion } from "motion/react";
-import { Eye, Target, Compass } from "lucide-react";
+import { Eye, Target } from "lucide-react";
 import { FadeIn } from "./Animation";
 
 const statements = [
   {
     title: "Vision",
     icon: <Eye size={28} />,
-    text: "To become a trusted infrastructure development and management company serving the global energy, oil, and gas corridor.",
+    text: "To become a leading African energy and infrastructure development partner delivering complex oil, gas, power, and industrial projects through technical excellence and strategic partnerships.",
   },
   {
     title: "Mission",
     icon: <Target size={28} />,
-    text: "To structure, advise, and manage high-impact energy and infrastructure opportunities with technical discipline, commercial clarity, and execution focus.",
-  },
-  {
-    title: "Mandate",
-    icon: <Compass size={28} />,
-    text: "To help projects move from concept to bankable development, with pathways for funding arrangement, advisory, and future PMC transition.",
+    text: "To develop, structure, advise, coordinate, and manage energy and infrastructure projects through technical expertise, regulatory readiness, funding support, EPC coordination, and execution-focused delivery.",
   },
 ];
 
@@ -35,7 +30,7 @@ export default function VisionMission() {
             </h2>
           </FadeIn>
 
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             {statements.map((statement, index) => (
               <FadeIn key={statement.title} direction="up" delay={index * 0.1}>
                 <motion.div
