@@ -5,7 +5,7 @@ import founderFieldImage from "../../../mobile/assets/images/founder-field.jpeg"
 
 export default function Founder() {
   return (
-    <section id="founder" className="bg-slate-50 py-24 overflow-hidden">
+    <section id="leadership" className="bg-slate-50 py-24 overflow-hidden">
       <div className="max-w-[1500px] mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-[1.05fr_0.72fr_0.85fr] gap-10 xl:gap-14 items-stretch">
           <FadeIn direction="right" className="flex min-h-[560px] flex-col">

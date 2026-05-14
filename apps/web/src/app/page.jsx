@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import FourPillars from "../components/FourPillars";
 import About from "../components/About";
 import Founder from "../components/Founder";
+import VisionMission from "../components/VisionMission";
 import Capabilities from "../components/Capabilities";
 import Sectors from "../components/Sectors";
 import Projects from "../components/Projects";
@@ -18,9 +19,10 @@ export default function LavidurWebsite() {
       <FourPillars />
       <About />
       <Founder />
+      <VisionMission />
+      <HowWeWork />
       <Capabilities />
       <Sectors />
-      <HowWeWork />
       <Projects />
       <Compliance />
 

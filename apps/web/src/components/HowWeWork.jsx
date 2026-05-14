@@ -36,7 +36,7 @@ const steps = [
 
 export default function HowWeWork() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="approach" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <FadeIn direction="up">

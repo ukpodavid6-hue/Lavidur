@@ -4,7 +4,16 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import lavidurLogo from "../../../mobile/assets/images/Lavidur_Logo-removebg-preview.png";
 
 const navLinks = [
-  { name: "ABOUT", href: "#about" },
+  {
+    name: "ABOUT",
+    href: "#about",
+    dropdown: [
+      { name: "COMPANY OVERVIEW", href: "#about" },
+      { name: "LEADERSHIP", href: "#leadership" },
+      { name: "VISION & MISSION", href: "#vision-mission" },
+      { name: "APPROACH", href: "#approach" },
+    ],
+  },
   {
     name: "CAPABILITIES",
     href: "#capabilities",
@@ -87,7 +96,7 @@ export default function Navbar() {
 
               {/* Dropdown */}
               {link.dropdown && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-[#022c22] border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-2xl rounded-sm py-4">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-[#022c22] border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-2xl rounded-sm py-4">
                   {link.dropdown.map((item) => (
                     <a
                       key={item.name}
@@ -129,17 +138,32 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween", duration: 0.4 }}
-            className="fixed inset-0 top-0 bg-[#022c22] z-40 lg:hidden flex flex-col pt-32 px-12 gap-8"
+            className="fixed inset-0 top-0 bg-[#022c22] z-40 lg:hidden flex flex-col pt-32 px-12 pb-12 gap-8 overflow-y-auto"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-2xl font-bold text-white hover:text-[#b4975a] transition-colors"
-              >
-                {link.name}
-              </a>
+              <div key={link.name} className="flex flex-col gap-3">
+                <a
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-2xl font-bold text-white hover:text-[#b4975a] transition-colors"
+                >
+                  {link.name}
+                </a>
+                {link.dropdown && (
+                  <div className="flex flex-col gap-3 border-l border-[#b4975a]/40 pl-5">
+                    {link.dropdown.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="text-sm font-bold tracking-widest text-white/60 hover:text-[#b4975a] transition-colors"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <a
               href="#contact"
