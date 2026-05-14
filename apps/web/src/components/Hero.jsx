@@ -41,7 +41,14 @@ export default function Hero() {
         </FadeIn>
 
         <motion.h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[1.1]">
-          {["The", "Power", "to", "Engineer", "Progress"].map((word, i) => (
+          {[
+            "Building",
+            "resilient",
+            "energy",
+            "and",
+            "infrastructure",
+            "ventures.",
+          ].map((word, i) => (
             <motion.span
               key={i}
               initial={{ opacity: 0, y: 30 }}
