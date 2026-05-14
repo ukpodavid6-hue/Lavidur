@@ -15,18 +15,17 @@ export default function Founder() {
               </span>{" "}
               In 2018 after 29 years in complex energy project leadership
             </h2>
-            <p className="text-gray-600 leading-relaxed font-light mb-6 max-w-xl">
+            <p className="text-gray-600 leading-relaxed font-light max-w-xl">
               Engr. Augustine O. Ukpong is a distinguished energy executive
               and chartered engineer whose career spans complex EPC and EPCIC
-              projects across oil and gas, power, pipelines, and infrastructure
-              sectors in the Middle East and Africa.
-            </p>
-            <p className="text-gray-600 leading-relaxed font-light max-w-xl">
-              LAVIDUR Ventures Limited is being reinforced and formalised as an
-              infrastructure development and management company serving the
-              global energy, oil, and gas corridor, with emphasis on project
-              development, funding arrangement, advisory, and future PMC
-              transition opportunities.
+              projects across the oil and gas, power, pipelines, and
+              infrastructure sectors in the Middle East and Africa. Building on
+              this depth of technical, commercial, and project leadership
+              experience, LAVIDUR Ventures Limited is being reinforced and
+              formalised as an infrastructure development and management
+              company serving the global energy, oil, and gas corridor, with
+              emphasis on project development, funding arrangement, advisory,
+              and future PMC transition opportunities.
             </p>
 
             <div className="mt-auto grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end pt-14">
